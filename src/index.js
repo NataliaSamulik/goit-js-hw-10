@@ -19,7 +19,8 @@ function onCountryInput(evt) {
     const countrySearch = evt.target.value.trim();
     
     if (!countrySearch) {
-         return
+
+      return
   }
  
   API(countrySearch).then(data => {
